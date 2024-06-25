@@ -43,7 +43,7 @@ public class RegisterHandler
 			cart.setUser(user);
 			user.setCart(cart);
 		}
-		
+		user.setEnabled(true);
 		userDAO.insert(user);
 		
 		Address billing = registerModel.getBilling();
